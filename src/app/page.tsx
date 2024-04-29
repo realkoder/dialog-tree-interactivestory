@@ -44,8 +44,8 @@ export default function Home() {
       <div className="flex justify-center h-auto w-1/2">
         {
           !isStoryFinal && currentStory.choices && currentStory.choices?.map((choice, index) => (
-            <div key={choice.id} className="flex flex-col items-between justify-center">
-              <p className="text-center w-full font-semibold mb-3">{choice.description}</p>
+            <div key={choice.id} className="flex flex-col items-between justify-center ">
+              <p className="text-center font-semibold mb-3">{choice.description}</p>
               <button className="bg-blue-500 p-2 rounded-lg text-white hover:scale-110 my-2" onClick={() => handleStoryChange(choice.id)}>{choice.header}</button>
             </div>
           ))
