@@ -41,7 +41,7 @@ export default function Home() {
         <p className="mt-16 mb-8 font-bold text-[24px] text-center"> Træf et valg</p>
       }
 
-      <div className="flex justify-between h-auto w-1/2">
+      <div className="flex justify-around h-auto w-1/2">
         {
           !isStoryFinal && currentStory.choices && currentStory.choices?.map((choice, index) => (
             <div key={choice.id} className="flex flex-col items-between justify-center mx-10 ">
